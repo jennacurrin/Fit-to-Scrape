@@ -30,7 +30,7 @@ app.use(bodyParser.urlencoded({
 // Have every request go through our router and middleware
 app.use(router);
 
-// If deployed, use the deployed database. Otherwise, use the local mongoHeadlines Database. (accessing what is on our local machine) 
+// If deployed, use the deployed database. Otherwise, use the local mongoHeadlines Database. (accessing what is on our local machine ) 
 var db = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
 
 // Connect mongoose to our database
